@@ -1,0 +1,5 @@
+Load "e:\\ARM\\BareMetal\\STM32\\Shcool Car\\Objects\\Template.axf" 
+_____^
+*** error 56: cannot open file
+Error: Flash Download failed  -  Could not load file 'e:\ARM\BareMetal\STM32\Shcool Car\Objects\Template.axf'
+Flash Load finished at 19:31:42
