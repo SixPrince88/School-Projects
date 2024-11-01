@@ -5,5 +5,7 @@
 #include "my_dma.h"
 
 void HW_ADC_Init(void);
-
+void sensor1_get(void);
+void sensor2_get(void);
+void sensor3_get(void);
 #endif

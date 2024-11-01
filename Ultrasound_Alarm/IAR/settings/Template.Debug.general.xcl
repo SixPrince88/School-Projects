@@ -1,0 +1,15 @@
+"E:\ARM\IAR\arm\bin\armproc.dll" 
+
+"E:\ARM\IAR\arm\bin\armstlink2.dll" 
+
+"E:\ARM\BareMetal\STM32\Ultrasound_Alarm\IAR\Debug\Exe\Template.out" 
+
+--plugin="E:\ARM\IAR\arm\bin\armbat.dll" 
+
+--device_macro="E:\ARM\IAR\arm\config\debugger\ST\STM32F1xx.dmac" 
+
+--flash_loader="E:\ARM\IAR\arm\config\flashloader\ST\FlashSTM32F10xx8.board" 
+
+
+
+
