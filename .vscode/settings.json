@@ -1,0 +1,23 @@
+{
+    "files.associations": {
+        "user_adc.h": "c",
+        "stm32f10x.h": "c",
+        "user_i2c.h": "c",
+        "sw_i2c.h": "c",
+        "user_spi.h": "c",
+        "sw_spi.h": "c",
+        "stdbool.h": "c",
+        "stdint.h": "c",
+        "hw_spi.h": "c",
+        "hw_i2c.h": "c",
+        "hw_oled.h": "c",
+        "hw_oled_data.h": "c",
+        "string.h": "c",
+        "user_delay.h": "c",
+        "w25q64.h": "c",
+        "user_gpio.h": "c",
+        "hw_w25q64.h": "c",
+        "core_cm3.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "enabled"
+}
