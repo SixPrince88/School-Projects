@@ -10,8 +10,9 @@
 #include "hw_fd07_3.h"
 timestamp_t timestamp = {0};	// 时间戳组
 extern uint8_t fd07_3_updateflag;	// 更新标志位
-void User_HW_Init(void)
+void Board_Init(void)
 {
+	User_Delay_Ms(1000);
 	nvic_init_t nvic_group[] = {
 		{USART1_IRQn, 0, 0},
 		{TIM3_IRQn, 1, 0},
@@ -30,12 +31,11 @@ void User_HW_Init(void)
 	GPIO_PinRemapConfig(GPIO_Remap_SWJ_JTAGDisable, ENABLE);
 	User_NVIC_All_Init(NVIC_PriorityGroup_2, nvic_group, sizeof(nvic_group) / sizeof(nvic_group[0]));
 	User_Serial_Init(usart1_t);
+	HW_Signal_Init();
 }
 int main(void)
 {
-	User_Delay_Ms(1000);
-	User_HW_Init();
-	HW_Signal_Init();
+	Board_Init();
 	HW_FD07_3_Init();
 	HW_OLED_Init();
 	// 主函数流程

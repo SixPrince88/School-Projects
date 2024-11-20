@@ -13,6 +13,9 @@ void User_Serial_Init(usart_init_t usart)
 	sys.USART_Parity = USART_Parity_No;
 	sys.USART_StopBits = USART_StopBits_1;
 	sys.USART_WordLength = USART_WordLength_8b;
+	
+	User_GPIO_All_Init(&usart.rx,1);
+	User_GPIO_All_Init(&usart.tx,1);
 	USART_Init(usart.usart_x, &sys);
 	USART_ITConfig(usart.usart_x, USART_IT_RXNE, ENABLE);
 	USART_Cmd(usart.usart_x, ENABLE);
